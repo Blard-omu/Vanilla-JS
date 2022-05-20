@@ -1,3 +1,9 @@
+.sec1{
+ background-color: rgb(137, 70, 199);
+}
+
+
+
 #JavaScript{
     background-color: aqua;
     color: brown;
@@ -52,7 +58,7 @@
 }
 
 h3{
-    background-color: gray;
+    background-color: rgb(12, 8, 8);
     margin-top: 2em;
     color: white;
 }
