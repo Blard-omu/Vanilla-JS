@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="JavaScript">JAVA SCRIPT</h1>
+   <p id="Demo">JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices. <br>
+
+    JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).</p>
+
+    <button class="button1" onclick="content()" onmouseleave = "display()">click</button>
+    <button class="button2" onmousemove="hover()" onmouseleave="goodbye()">hover</button>
+   
+<div id="Dem">
+    <h3 id="Lag">I Love LAGOS</h3>
+    <img ondrag="Dragg()" onclick="click_img()" src="https://images.adsttc.com/media/images/5d4b/fbad/284d/d131/c200/00c3/large_jpg/open-uri20190808-19972-1cifqrb.jpg?1565260689" alt="Eko_Lagos">
+</div>
+
+   <div class="btn">
+    <button id="btn1" onclick="openMe()">Open</button>
+    <button id="btn2" onclick="closeMe()">Close</button></div>
+
+
+
+
+    <div id ="preview" onclick="return_preview()">
+        <p id="Idk" >My Photo Gallery</p>
+    </div>
+
+    <div class="pics">
+        <div class="div-1">
+            <p>Pics one</p>
+            <img  onmouseover="showPreview(this)"
+            onclick="upDate(this)"
+                onmouseleave ="document.getElementById('Idk').innerHTML = 'Hover over on image below';" src="../JAVA SCRIPT/images/blard_logo.jpg" alt="blard_logo">
+        </div>
+        <div class="div-2">
+            <p>Pics two</p>
+            <img id="" onmouseover="showPreview(this)"
+            onclick="upDate2(this)"
+                onmouseleave ="document.getElementById('Idk').innerHTML = 'Hover over on image below';"
+            src="../JAVA SCRIPT/images/IMG_0349.jpg" alt="Blard_Airport"></div>
+        <div class="div-3">
+            <p>Pics three</p>
+            <img onmouseover="showPreview(this)"
+            onclick="upDate3(this)"
+            onmouseleave ="document.getElementById('Idk').innerHTML = 'Hover over on image below';"  
+            src="../JAVA SCRIPT/images/profile_3.jpg" alt="Profile_Pics"></div>
+        </div>
+<!--js script link-->
+        <script src="app.js"></script>
+</body>
+</html>

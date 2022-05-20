@@ -1,0 +1,148 @@
+#JavaScript{
+    background-color: aqua;
+    color: brown;
+    
+}
+
+.button1{
+    background-color: blue;
+    color: white;
+    width: 10em;
+    padding: 1em;
+    border-radius: 5em;
+}
+.button2{
+    background-color: black;
+    color: white;
+    margin-left: 5em;
+    width: 10em;
+    padding: 1em;
+    border-radius: 5em;
+}
+
+
+.btn{
+    margin-top: 1em;
+
+}
+
+#btn1{
+    background-color: red;
+    color: white;
+    width: 10em;
+    padding: 1em;
+    border-radius: 5em;
+}
+#btn2{
+    background-color: green;
+    color: white;
+    width: 10em;
+    padding: 1em;
+    border-radius: 5em;
+    margin-left: 5em;
+}
+#Dem{
+    display: block;
+    margin-top: 3em;
+}
+#Dem img{
+    display: block;
+    /* margin: auto; */
+    width: 50%;
+}
+
+h3{
+    background-color: gray;
+    margin-top: 2em;
+    color: white;
+}
+
+.closeMe{
+    display: none;
+}
+
+.dragg{
+    opacity: +2;
+}
+#preview{
+    display: block ;
+    margin: auto;
+    width: 30em;
+    height: 20em;
+    border: 5px solid black;
+    background-image: url(../FRONTEND/image-equilibrium.jpg);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
+    padding-top: 5em;
+    margin-top: 3em;
+}
+
+.pics{
+    display: flex;
+    width: 80%;
+    margin-left: 5em;
+}
+
+.div-1{
+    display: block ;
+    width: 15em;
+    height: 10em;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+    margin-top: 3em;
+    margin-left: 5em;
+}
+.div-2{
+    display: block ;
+    width: 15em;
+    height: 10em;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+    margin-top: 3em;
+    margin-left: 5em;
+}
+.div-3{
+    display: block ;
+    width: 15em;
+    height: 10em;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+    margin-top: 3em;
+    margin-left: 5em;
+}
+.div-1 img{
+    width: 100px;
+    height: 6em;
+    background-color: rgb(59, 36, 8);
+    
+}
+.div-2 img{
+    width: 200px;
+    height: 6em;
+    background-color: rgb(117, 67, 6);
+}
+.div-3 img{
+    width:  200px;
+    height: 6em;
+    background-color: rgb(130, 74, 6);
+}
+
+.div-1 p{
+    color: blueviolet;
+    text-align: center;
+}
+.div-2 p{
+    color: blueviolet;
+    text-align: center;
+}
+.div-3 p{
+    color: blueviolet;
+    text-align: center;
+}
+
