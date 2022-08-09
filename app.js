@@ -582,7 +582,7 @@ salute('people')
 let explain = (number)=>{
     let apple = 10
     let statement = 'Akin was able to buy ' + apple + ' wrap of fufu ' + number 
-    return statement
+    // return statement
     console.log(statement);
 }
 let $description = explain('on His way back from church')
@@ -596,7 +596,7 @@ console.log(explanation);
 let speak = function(name, time){
     console.log(`Good ${time} ${name}`);
 }
-speak('Blard', 'afternoon')
+speak('Blard', 'afternoon') //Good afternoon Blard
 
 
 //Assignment 1
@@ -632,32 +632,11 @@ if(Array[i] === 0){
 }
 calculate($trainee)
 
-//
-// let $trainess = [1,0,200];
-// let fees = [60,800,0,120]
-
-// function calculate(Array, say){
-//   for(let i = 0; i <Array.length; i++){
-//     if(Array[i]=== 0){
-//       continue
-//     }
-//     console.log(Array[i]);
-//   }
-
-//   for(let g = 0; g < say.length; g++){
-//     console.log(say[g]);
-
-//   }
-
-// }
-
-// calculate($trainess, fees)
 
 
 //HIGHER ORDER FUNCTION & Call back 
 //Higher order function that accepts other functions as an argument
 //call back are function that are passed to another function as an argument and executed inside that function.
-
 
 
 let classs = function () {
