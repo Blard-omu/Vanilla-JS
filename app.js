@@ -28,6 +28,10 @@ console.log(GRAVITY);
 let first_name = 'RILWAN';
 let last_Name = 'Ovie'; 
 console.log(last_Name.length);
+console.log(last_Name.length + first_name.length);
+let FullName2 = first_name +" " + last_Name;
+console.log(FullName2);
+
 
 
 // Stringindex
@@ -35,12 +39,14 @@ let fullName = 'chiamaka';
 console.log(fullName[2]);
 let result = fullName.length
 console.log(result);
+let fullNameSlice = fullName.slice(0, 4);
+console.log(fullNameSlice);
 
 
 
 // String methods
 // upper case
-let surname = 'ademola';
+let surname = 'blard';
 let finalSurname = surname.toUpperCase()
 console.log(finalSurname);
 
@@ -53,12 +59,12 @@ console.log(color.toLowerCase());
 let email = 'techstudio@outlook.com'
 console.log(email.indexOf('@'));
 let sliceEmail = email.slice(0,4)
-console.log(sliceEmail);
+console.log(sliceEmail);//tech
 let slicegmail = email.slice(14,18)
-console.log(slicegmail);
+console.log(slicegmail);//look
 
 //replace()
-let replace_email = email.replace('t', 'z');
+let replace_email = email.replace('d', 'l');
 console.log(replace_email);
 
 
@@ -112,22 +118,23 @@ console.log(score2);
 
 //Math operators +,-,*,/,%
 let final_score = score + score2
-console.log(final_score);
+console.log(final_score);//300
 let minus = score2 - score
-console.log(minus);
+console.log(minus);//100
 
 let mult = score * score2
-console.log(mult);
+console.log(mult);//30000
 
 let div = score2/score
-console.log(div);
+console.log(div);//100
 
-let index = 2 ** 5;
-console.log(index);
+let index = 2 ** 5;//means 2 raised to power 5
+console.log(index);//32
 
 // let indices = num ** num;
 // console.log(indices);
 
+//modular
 let mod = 5 % 2;
 console.log(mod);
 
@@ -143,8 +150,9 @@ year += 3
 console.log(year);
 year -= 6
 console.log(year);
-//class work
 
+
+//class work
 let _continent = 'Africa';
 let language = 'pidgin English';
 let ghanaPopulation = 500;
@@ -169,6 +177,7 @@ console.log(nigeriaPopulation > ghanaPopulation);
 //concatenation (for it's will can use it\'s)
 let description = _country + ' is in ' + _continent + " and it's "  + nigeriaPopulation + ' people speak ' + language
 console.log(description);
+
 //examlpe of concatrnation
 let blog = 50;
 let statement = 'the blog has ' + blog + ' like '
@@ -184,7 +193,7 @@ console.log(response);
 
 //template literals or string
 //interpolation /use the backtis key
-let responses = `Hey Silva did you know ${studentName} attends ${school} and had ${$score} in her test` 
+let responses = `Hey Silva did you know ${studentName} attends ${school} and had ${$score} in her test?` 
 console.log(responses);
 
 //Object
@@ -204,6 +213,7 @@ console.log(myFriends);
 
 myFriends[1] = 'Mark';
 console.log(myFriends);
+
 //Properties
 console.log(myFriends[2]);//index property//it'l return 'Rilwan'
 console.log(myFriends.length);
@@ -216,14 +226,15 @@ let join = myFriends.join('+');//To join elements in an array, you can use any s
 console.log(join);
 
 let indexOf = myFriends.indexOf('Ade');//indeOf is for position of element in an array
-console.log(indexOf);
+console.log(indexOf);//3
 
 let concat2 = myFriends.concat(['Akin', 'Kudus'])
-console.log(concat2);
-//push used to add to existing array
+console.log(concat2);//Akin and Kudus will be added to the myFriends array.
+
+//push used to add to an element to the end of an  existing array
 let push = myFriends.push('Silva')
 console.log(myFriends);
-//pop used to remove existing array
+//pop used to remove element from an existing array
 let pop = myFriends.pop();
 console.log(myFriends);
 
@@ -231,13 +242,13 @@ console.log(myFriends);
 let trainee = ['Temilolu', 'Ola', 'Nike', 'Blessing', 'Kudus', 'Gift', 'Gbolahon', 'Blard', 'Hilaray', 'Akin', 'Silva', 'Femi', 'Stanley', 'Ade', 'Ridwan' ]
 console.log(trainee);
 
-let addpush = trainee.push('Amos', 'Mike');//To add to an array
+let addpush = trainee.push('Amos', 'Mike');//To add to the end of an array
 console.log(trainee);
 
-let popMike = trainee.pop();//To remove from an array
+let popMike = trainee.pop();//To remove last element from an array
 console.log(trainee);
 
-//add at the beginning
+//To add an element at the beginning of an array
 let startPush = trainee.unshift('Zack', 'Bobby');
 console.log(trainee);
 
@@ -261,20 +272,18 @@ let newFoods = ['rice', 'beans', ...foods]
 console.log(newFoods);//union of food & newFoods
 
 let colors = ['pink', 'green', 'blue', 'red', 'white', 'grey']
-let [a,b,c,...rest] = colors;
-console.log(a);
+console.log(colors);
 
 //array destructure uses ...
 // let [a,b,c] = colors;
-console.log(a,b,c,...rest);
+let [a, b, c, ...rest] = colors;
+console.log(a, b, c, ...rest);
+console.log(a);//pink
+console.log(rest);// red, white ,grey
+console.log(colors[2]);//blue
 
-console.log(colors);
-
-
-//Day 3
 
 //Data conversion and coercion
-
 //conversion
 let imputYear = '1991';
 console.log(imputYear);
@@ -349,8 +358,8 @@ console.log(set);
 // Loops or iteration
 // for - loop//
 
-for(let i = 0; i < 11; i++) {
-    console.log('iteration');} //initializer,condition,final expression
+for(let i = 0; i < i.length; i++) {
+    console.log(i);} //initializer,condition,final expression
 
 
 //Iteration Manually
@@ -375,11 +384,11 @@ for (let rep = 1; rep <= 10; rep++) {
 
 let guys = ['Hilary', 'Blessing', 'Ade', 'Femi']
 
-for (let i = 0; i < guys.length; i++) {console.log(guys[i]);
-}// Blessing at position [1]
+for (let i = 0; i < guys.length; i++) {
+    console.log(guys[i]);
+}//
 
 //while loop//  initializer, while, final expresion++'
-
 let babes = ['fatima', 'joy','chioma','esther']
 let i= 0
 
@@ -389,12 +398,18 @@ i++}
 
 let Colors = ['blue','pink','black','red']
 
-for (let i = 0; i < Colors.length; i++) {
-    console.log(Color[i]);//not complete
+for (let i = 0; i < Colors.length;i++) {
+    console.log(Colors[i].toLocaleUpperCase());
 }
 
-
-
+//just playing with HO array methods
+//Using forEach()
+Colors.forEach((i) => console.log(i));
+//Using filter
+const filterSth = Colors.filter((i) => {
+    return (i.length > 3)
+});
+console.log(filterSth);
 
 //conditional statements
 //Control-of-Flow
@@ -430,26 +445,29 @@ if(PASSWORD.length >= 12){
 // || means or
 // && means and
 
-
+//For &&
 // TT = T
 // TF = F
 // FT = F
 // FF = T
 
+//For ||
 // T||T = T
 // T||F = T
 // F||T = T
 // F||F = F
 
-console.log(true || true);
-console.log(true || false);
-console.log(false || true);
-console.log(false || false);
 
-console.log(true && true);
-console.log(true && false);
-console.log(false && true);
-console.log(false && false);
+//example with logic operators
+console.log(true || true);//true
+console.log(true || false);//true
+console.log(false || true);//true
+console.log(false || false);//false
+
+console.log(true && true);//true
+console.log(true && false);//false
+console.log(false && true);//false
+console.log(false && false);//true
 
 // let _Password = 'password1234#';
 // if(_Password.length >= 12 && _Password.includes('@')){
@@ -459,8 +477,8 @@ console.log(false && false);
 // }
 
 //extra
-console.log(!true);
-console.log(!false);
+console.log(!true);//false
+console.log(!false);//true
 
 
 // Assignment
@@ -489,7 +507,7 @@ console.log(`your score is: `, _RESULT[i]);
 }
 
 
-let GRADE = 'A'
+let GRADE = 'C'
 if(GRADE === 'A'){
     console.log('you got A');
 }
@@ -551,52 +569,58 @@ console.log(`Outside block of code: `, $Age);
 //Function  //Function  //Function
 
 
-//Declaration
-function greet(){
-console.log('My Gee');
+// Function Declaration
+function greet(person='guy'){
+console.log(`How far ${person}`);
 }
-greet()
-greet()
-greet()
-greet()
+greet("gee")//passing parameter to the function
+greet()//no para, hence it takes the default parameter
+greet()//no para
+greet()//no para
 
 
 //Expression
-let speaker = function(){
-    console.log('My person');
+let speaker = function(person='person'){
+    console.log("My " + person);
 }
 speaker()
-speaker()
-speaker()
-speaker()
-
+speaker('bro')
+speaker('sister')
+speaker('babe')
 
 
 //Arrow FUNCTION
-let salute = (gender)=>{
-    console.log('Na we dey here ' + gender);
+let salute = (someText)=>{
+    console.log('Na we dey here ' + someText);
 }
-//Calling
-salute('people')
+//Calling the "salute" function
+salute('dey run things')
+salute('dey run things')
+salute('dey run things')
 
 let explain = (number)=>{
     let apple = 10
     let statement = 'Akin was able to buy ' + apple + ' wrap of fufu ' + number 
-    // return statement
+
     console.log(statement);
 }
-let $description = explain('on His way back from church')
-console.log($description);
+explain('yesterday')
+
+let $description = ' on His way back from church';
+explain($description)
 
 let explanation = $description + ' this morning';
-console.log(explanation);
+explain(explanation)
 
 
 //Argument & Parameters
 let speak = function(name, time){
     console.log(`Good ${time} ${name}`);
 }
+speak('Blard', 'morning') //Good morning Blard
 speak('Blard', 'afternoon') //Good afternoon Blard
+speak('Blard', 'evening') //Good evening Blard
+speak('Blard', 'night') //Good night Blard
 
 
 //Assignment 1
@@ -642,6 +666,7 @@ calculate($trainee)
 let classs = function () {
     return 'Hi'
 }
+
 let Higher = (name, thus) =>{
     let myName = 'Hilary';
     return`${thus()} ${myName} my name is ${name}`
@@ -656,7 +681,7 @@ let Spartan = (63, 55, 47)
 let calcAverage = (one, two, three) =>{
 return(one+two+three)/3
 }
-console.log(calcAverage (43, 21, 73));
+// console.log(calcAverage (43, 21, 73));
 
 let aveAlpha = calcAverage (43, 21, 73);
 console.log(aveAlpha);
@@ -672,6 +697,9 @@ if (aveAlpha >= 2 * aveSpartan) {
     console.log(`Spartan team wins (${aveSpartan} vs ${aveAlpha})`);
 }
 
+//using Tenary operator
+const winner = (aveAlpha >= 2 * aveSpartan) ? `Alpa team wins   (${aveAlpha} by ${aveSpartan})` : `Spartan team wins (${aveSpartan} by ${aveAlpha})`;
+console.log(winner);
 
 
 //To calculate tax
@@ -679,16 +707,14 @@ if (aveAlpha >= 2 * aveSpartan) {
 let calcTax = (salary)=> {
 
     return(salary*0.1)
-
 }
 let Tax_1 = calcTax(5000);
 console.log(Tax_1);
 
-let Tax_2 = calcTax(49989);
-console.log(`Your Tax payable is ${Tax_2}`);
+let Tax_2 = calcTax(140000);
+console.log(`Your Tax payable is $${Tax_2}`);
 
 //To Calculate simple intrest
-
 let PRT =(p,r,t)=> {
 return(p*r*t)/100
 }
@@ -711,9 +737,8 @@ console.log(compoundInt);
 //Objects----object literal(foreach,map,filter)
 //DOM(Document Object model)
 
-
 //Example of object literal
-let client_user ={
+let client_user = {
     firstName: 'Tolu',
     lastName: 'William',
     Age: '25',
@@ -728,21 +753,27 @@ let client_user2 = {
 let all_clients = {...client_user, ...client_user2}//To merge and list use dot dot dot
 console.log(all_clients);
 
-// console.log(client_user);
-
 
 
 //dot vs bracket
-console.log(client_user.Age);
-console.log(client_user.favFood);
-console.log(client_user.hasDriverslicense);
-console.log(client_user.firstName);
-console.log(client_user.lastName);
+console.log(client_user.Age);//25
+console.log(client_user.favFood);//Beans...
+console.log(client_user.hasDriverslicense);//false
+console.log(client_user.firstName);//Tolu
+console.log(client_user.lastName);//William
+
 //To replace 'Tolu
 client_user.firstName = 'Gbolahan'
+console.log(client_user.firstName);//Gbolahan
 
 //To delete
 //delete client_user.firstName
+delete client_user.lastName;
+console.log(client_user.lastName);//undefine because the property last name has no value again //william has been deleted.
+
+//Now let's add new value to lastName property
+client_user.lastName = "Okeke";
+console.log(client_user.lastName);//Okeke
 
 //To delete from the array
 console.log(client_user.favFood.pop());
@@ -756,6 +787,7 @@ console.log(client_user['firstName']);
 console.log(client_user['Age']);
 console.log(client_user['favFood']);
 
+
 //Object destructuring
 const person ={
     name: 'Nike',
@@ -766,17 +798,17 @@ const person ={
     }
 }
 
-//remember to update client_user & Favorite food
-
-
-console.log(person.address.city);
+console.log(person.name);//Nike
+console.log(person.age);//40
+console.log(person.address.state);//Lagos
+console.log(person.address.city);//Surulere
 
 let customer = {
     First_Name: 'Ola',
     Last_Name: 'Okoronkwo',
     year: 2022,
     calcBirthday: function(){
-        return this.year - 1987
+        return this.year - 1991
         
     },
 
@@ -791,55 +823,77 @@ statement: function(){
 
 console.log(customer.statement());
 
+console.log(`${customer.$friends[2]} and ${customer.Last_Name} have been friends since ${customer.year} `);
+
 //console.log(this);outside object will display window commands but within the object, it's used to make reference to an object
 
 //Classwork
-let All_Object ={
+let All_Object = {
     Gb_weight: 76,
     Gb_height: 1.99,
-    calc_GBBMI: function(){
-        return (this.Gb_weight/this.Gb_height)
-    },
-
-
     Bl_weight: 80,
-    Bl_height: 2.1,
-    calc_BLBMI: function(){
-        return (this.Bl_weight/this.Bl_height)
-    }
+    Bl_height: 2.1,   
+  calc_GBBMI: function () {
+    return this.Gb_weight / this.Gb_height;
+  },
 
-}  
+  calc_BLBMI: function () {
+    return this.Bl_weight / this.Bl_height;
+  },
+};  
 console.log(All_Object.calc_GBBMI());
 console.log(All_Object.calc_BLBMI());
 
-//let result_BMI = (All_Object.calc_GBBMI() > All_Object.calc_BLBMI) ? //to be completed
-
+let result_BMI =
+  (All_Object.calc_GBBMI() > All_Object.calc_BLBMI)
+    ? `Gbolahan's BMI (${All_Object.calc_GBBMI()}) is greater`
+    : `Blessing's BMI (${All_Object.calc_BLBMI()}) is greater`;
+console.log(result_BMI);
 
 
 
 //Higher order functions(foreach,map,filter)//
-let  PEOPLE =[
+let PEOPLE = [
+    
+    {
+        name: 'Blessing',
+        age: 30,
+        position: 'Banker'
+    },
 
-    {name: 'Blessing', age: 30, position:'Banker'},
-    {name: 'Silva', age: 40, position:'Web developer'},
-    {name: 'Akin', age: 50, position:'Product Manager'},
-    {name: 'B-Lard', age: 60, position:'Mobile App Developer'}
+    {
+        name: 'Silva',
+        age: 40,
+        position: 'Web developer'
+    },
 
-  ]
-  //loop PEOPLE//
+    {
+        name: 'Akin',
+        age: 50,
+        position: 'Product Manager'
+    },
+
+    {
+        name: 'B-Lard',
+        age: 60,
+        position: 'Mobile App Developer'
+    }
+]
+  
+  //Using for loop//
   for(let i = 0; i < PEOPLE.length; i++){
       console.log(PEOPLE[i]);
   }
 
-  //forEach// 
+  //forEach loop// HO
   //It doesnt return a new array
   PEOPLE.forEach((person)=>{
       console.log(person);
   })
 
-  //map
+  //map//HO
   //it returns a new array
-  //Doesnt change the size of the original one
+  //Doesnt change the size of the original array
   //Uses values from the original array
 let other_people = PEOPLE.map((i)=>{
     return i
@@ -852,7 +906,7 @@ console.log(other_people);
 // it returns a new Array
 
 let yungBlood = PEOPLE.filter((z)=>{
-return z.name === 'Blessing'
+    return z.age > 30;
 })
 
 console.log(yungBlood);//it will return blessing and other properties
@@ -864,9 +918,6 @@ console.log(item);
 console.log(index);
 console.log(array);
 })
-
-
-
 
 
 //MY WORK
@@ -972,41 +1023,198 @@ console.log(`Bill was $${BILL}, Tip was`)
 //Exercise 2
 
 const companies = [
-    { name: 'company One', category: 'Finance', start: 1981, end: 2003 },
-  { name: 'company Two', category: 'Retail', start: 1992, end: 2008 },
-  { name: 'company Three', category: 'Auto', start: 1999, end: 2007 },
-  { name: 'company Four', category: 'Retail', start: 1989, end: 2010 },
-  { name: 'company Five', category: 'Technology', start: 2009, end: 2014 },
-  { name: 'company Six', category: 'Finance', start: 1987, end: 2010 },
-  { name: 'company Seven', category: 'Auto', start: 1986, end: 1996 },
-  { name: 'company Eight', category: 'technology', start: 1981, end: 1989 },
-]
+  {
+    id: 1,
+    name: "company One",
+    category: "Finance",
+    start: 1981,
+    end: 2003,
+  },
+  {
+    id: 2,
+    name: "company Two",
+    category: "Retail",
+    start: 1992,
+    end: 2008,
+  },
+  {
+    id: 3,
+    name: "company Three",
+    category: "Auto",
+    start: 1999,
+    end: 2007,
+  },
+  {
+    id: 4,
+    name: "company Four",
+    category: "Retail",
+    start: 1989,
+    end: 2010,
+  },
+  {
+    id: 5,
+    name: "company Five",
+    category: "Technology",
+    start: 2009,
+    end: 2014,
+  },
+  {
+    id: 6,
+    name: "company Six",
+    category: "Finance",
+    start: 1987,
+    end: 2010,
+  },
+  {
+    id: 7,
+    name: "company Seven",
+    category: "Auto",
+    start: 1986,
+    end: 1996,
+  },
+  {
+    id: 8,
+    name: "company Eight",
+    category: "technology",
+    start: 1981,
+    end: 1989,
+  },
+];
 //1)log to the console the name of the companies only 
 //2)log to the console companies that lasted 10 years or more
 //Solution
 //#1
 console.log(companies.length);
 
-//#2 using #filter
-let tenYearCom =companies.filter(function(company) {
-    return companies.end - companies.start >= 10
-})
+//#2 using #filter and mapping together
+let tenYearCom = companies
+    .filter((company) => {
+        const someMat = company.end - company.start;
+        if (someMat >= 10) {
+          return company.id  ;
+        } ; 
+        
+    }).map((seletName) => {
+      
+        return seletName.name;
+  });
 console.log(tenYearCom);
-
 
 
 
 //Exercise 3
 const age = [30,15,10,5,40,80,2,20,21,25]
 
-//3)log to your console again people with age greater or equal to 21
-//use Higher order functions on Exercise 2
+//1)log to your console again people with age greater or equal to 21.
 //Solution
 let overAge = age.filter((agg)=>{
-    return agg >= 21
+    return agg >= 21;
 })
-
 console.log(overAge);
+
+//To sort the ages 
+
+
+
+let score1 = [60,-20,50,95,80,-5,70];
+console.log(score1);
+//To get the maximum number in the array
+function max(array) {
+    for (let i = 0; i < array.length - 1; i++){
+        if (array[i] > array[i + 1]) {
+            let swap = array[i];
+            array[i] = array[i + 1];
+            array[i + 1] = swap;
+        }
+    }
+    let maxValue = array[array.length - 1];
+    return maxValue       
+}
+let maxResult = max(score1);
+console.log(`Maximum number is ${maxResult}`);// 95
+
+
+//To get the minimum number in the array
+function min (items) {
+    let minIndex = 0;
+    for (let j = 1; j < items.length; j++){
+        if (items[minIndex] > items[j]){
+            minIndex = j;
+        }
+    }
+    return items[minIndex];
+}
+
+let minResult = min(score1);
+console.log(`Minimum number is ${minResult}`);// 50
+
+console.log(score1);
+
+//To order array items
+class BubbleSort{
+    static sort(arrays) {
+        for (let i = 0; i < arrays.length - 1; i++){
+            for (let j = 0; j < arrays.length - i - 1; j++){
+                if (arrays[j] > arrays[j + 1]) {
+                    let swap = arrays[j];
+                    arrays[j] = arrays[j + 1];
+                    arrays[j + 1] = swap;
+                }
+            }
+        }
+    }
+}
+
+BubbleSort.sort(score1);
+
+for (let i = 0; i < score1.length; i++){
+    console.log(score1[i] + " ");
+}
+
+
+
+
+
+let finalBubbleSort = score1.sort((a, b) => {
+    return a - b;//Ascending order
+})
+console.log(finalBubbleSort);
+
+// TO REVERSE AN ARRAY
+let finalBubbleSort2 = score1.sort((a, b) => {
+  return b - a; //Descending order
+});
+console.log(finalBubbleSort2);
+
+// JS DSA Task 
+// Reverve the order of an array item without using "sort()" method
+
+myArr = [50, 30,70, 84,10];// Before
+console.log(myArr);
+function myRevArr (myArr) {
+    let length = myArr.length;
+    let middle = length / 2;
+    for (let i = 0; i <= middle; i++){
+        let swap = myArr[i];
+        myArr[i] = myArr[length - i - 1];
+        myArr[length - i - 1] = swap;
+    }
+    
+   
+    for (let i = 0; i < myArr.length; i++) {
+        
+        console.log(myArr[i] + ",");
+    }
+}
+
+myRevArr(myArr) // 10, 84, 70, 30, 50
+console.log(myArr);// After => [10, 84, 70, 30, 50]
+
+//Alternatively
+const myRevArr2 = myArr.reverse()
+console.log(myRevArr2); //myArr has been reversed again
+console.log(myArr);
+
 
 //Monday 25th April 2022
 //Math Object
@@ -1089,7 +1297,6 @@ function TT(){
     console.log(Date());
 }
 TT()
-
 
 
 

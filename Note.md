@@ -69,7 +69,7 @@ we use backtick for interpolation- ${ }
 String= '' or ""
 Array= [ ]
 Object= {  }
-Higher function
-Map
-For/With
+Higher function Array methods
+Map()
+ForEach
 Filter
